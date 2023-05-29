@@ -18,11 +18,13 @@ public class seleniumPage extends BasePage {
         WebElement nameE = Web.getDriver().findElement(headerName);
         name = nameE.getText();
         System.out.println(name);
+        System.out.println(name);
     }
     public void readName(){
         String name = "";
         WebElement nameE = Web.getDriver().findElement(headerName);
         name = nameE.getTagName();
+        System.out.println(name);
         System.out.println(name);
     }
     public void readName(String name){
@@ -30,6 +32,7 @@ public class seleniumPage extends BasePage {
         WebElement nameE = Web.getDriver().findElement(headerName);
         na = nameE.getTagName();
         Assert.assertEquals(na, name);
+        System.out.println(na);
         System.out.println(na);
     }
 }
