@@ -9,6 +9,7 @@ import webDriver.Web;
 public class seleniumPage extends BasePage {
 
     static By headerName =  By.xpath("//*[@class=\"td-content\"]//h1");
+    By linkGettingStarted = By.xpath("//a[contains(text(),'Getting started')]");
 
 
 
@@ -31,5 +32,13 @@ public class seleniumPage extends BasePage {
         na = nameE.getTagName();
         Assert.assertEquals(na, name);
         System.out.println(na);
+    }
+    public void clickGetStarted(){
+        WebElement nameE = Web.getDriver().findElement(headerName);
+        nameE.click();
+    }
+    public void getUrlGetStarted(){
+        String nameE = Web.getDriver().getCurrentUrl();
+        System.out.println(nameE);
     }
 }

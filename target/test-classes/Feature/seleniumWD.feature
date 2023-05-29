@@ -1,4 +1,5 @@
 Feature: Selenium webDriver test
+  @unit
   Scenario: get name on first link text
     Given the url
     And find the webDriver linkText

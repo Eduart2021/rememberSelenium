@@ -30,4 +30,15 @@ public class SDseleniumWD {
         System.out.println("element tagname is");
         pp.readName(name);
     }
+    @And("^click on the linkText GettingStarted$")
+    public void clickGetStartedElement() throws InterruptedException {
+        System.out.println("click getting started: ");
+        pp.clickGetStarted();
+    }
+    @And("^get link url GettingStarted$")
+    public void getStartedUrl() throws InterruptedException {
+        pp.getUrlGetStarted();
+        bp.wait50sec();
+    }
+
 }
